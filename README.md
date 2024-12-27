@@ -104,6 +104,9 @@ Use [plot_history.ipynb](plot_history.ipynb).
 
 ## License
 ```
+Copyright (c) 2023 Kenta Kikuzumi
+This software is released under the MIT License, see LICENSE.
+
 Copyright (c) 2022 Ryosuke Koike
 This software is released under the MIT License, see LICENSE.
 ```
