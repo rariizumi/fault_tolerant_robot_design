@@ -31,6 +31,11 @@ python demo.py -c ewalker_iso6.json -i log/old/0.8.8_20220203_225723/parameter_b
 python demo.py -t eval -s 1 -i log/old/0.8.8_20220203_225723/parameter_best.json
 ```
 
+The following command performs 5000 test runs with randomly selected failure patterns
+```bash
+python demo.py -t sim -s 1 -i log/old/0.8.8_20220203_225723/parameter_best.json
+```
+
 #### Record video
 ```bash
 # Probably requires ffmpeg
@@ -38,16 +43,6 @@ python demo.py -t record -s 1 -i log/old/0.8.8_20220203_225723/parameter_best.js
 ```
 
 ## Perform training
-#### Reproduce in the prepared config
-```bash
-# Walking task
-python train.py -c ewalker_iso6.json
-python train.py -c ewalker_dec.json
-
-# Manipulation task
-python train.py -c ehand_egg_iso6.json
-python train.py -c ehand_egg_dec.json
-```
 
 #### Perform a new training in the walking task
 1. Clone `eagent/configs/ewalker/ewalker_iso6.json` to `eagent/configs/ewalker/my_cfg.json`.
@@ -58,9 +53,6 @@ python train.py -c ehand_egg_dec.json
 python train.py -c my_cfg.json
 ```
 The training results are created in the `log` directory.
-
-#### Perform a new training in the manipulation task
-Replace `ewalker` with `ehand_egg` in the previous section.
 
 #### Resume training
 To resume training, set directory in the process with `-o` option. For example:
