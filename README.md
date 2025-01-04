@@ -18,19 +18,12 @@ Check [install.md](install.md).
 
 #### Visualization
 ```bash
-# walking robot
+# Initial settigns of walking robot
 python demo.py -c ewalker.json -i zoo/walker/starfish6_48.64.json
-
-# manipulation robot
-python demo.py -c ehand_egg.json -i zoo/hand/ehand5_below_sac_256.256.256.json
 
 # Trained walking robot (these perform exactly the same)
 python demo.py -s 1 -i log/old/0.8.8_20220203_225723/parameter_best.json
 python demo.py -c ewalker_iso6.json -i log/old/0.8.8_20220203_225723/parameter_best.json
-
-# Trained manipulation robot (these perform exactly the same)
-python demo.py -s 1 -i log/old/0.8.8_20220205_213427/parameter_best.json
-python demo.py -c ehand_egg_iso6.json -i log/old/0.8.8_20220205_213427/parameter_best.json
 ```
 
 #### Evaluation
