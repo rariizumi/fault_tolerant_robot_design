@@ -18,28 +18,33 @@ Check [install.md](install.md).
 
 #### Visualization
 ```bash
-# Initial settigns of walking robot
+# Initial settigns of walking robot (for training by icm)
 python demo.py -c ewalker.json -i zoo/walker/starfish6_48.64.json
 
-# Trained walking robot (these perform exactly the same)
-python demo.py -s 1 -i log/old/0.8.8_20220203_225723/parameter_best.json
-python demo.py -c ewalker_iso6.json -i log/old/0.8.8_20220203_225723/parameter_best.json
+# Trained walking robot: trained only by mdm
+python demo.py -s 1 -i log/old/free_mdm_secondhalf_1/parameter_best.json
+
+# Trained walking robot: trained only by icm
+python demo.py -s 1 -i log/old/free_icm_secondhalf_1/parameter_best.json
+
+# Trained walking robot: trained by mdm-icm (proposed method)
+python demo.py -s 1 -i log/old/free_mdm_icm_secondhalf_1/parameter_best.json
 ```
 
 #### Evaluation
 ```bash
-python demo.py -t eval -s 1 -i log/old/0.8.8_20220203_225723/parameter_best.json
+python demo.py -t eval -s 1 -i log/old/free_mdm_secondhalf_1/parameter_best.json
 ```
 
 The following command performs 5000 test runs with randomly selected failure patterns
 ```bash
-python demo.py -t sim -s 1 -i log/old/0.8.8_20220203_225723/parameter_best.json
+python demo.py -t sim -s 1 -i log/old/free_mdm_secondhalf_1/parameter_best.json
 ```
 
 #### Record video
 ```bash
 # Probably requires ffmpeg
-python demo.py -t record -s 1 -i log/old/0.8.8_20220203_225723/parameter_best.json
+python demo.py -t record -s 1 -i log/old/free_mdm_secondhalf_1/parameter_best.json
 ```
 
 ## Perform training
