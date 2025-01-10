@@ -73,7 +73,7 @@ python train.py -c my_cfg.json -o `log/x.x.x_xxxxxxxx_xxxxxx`
 It is necessary that a directory `log/x.x.x_xxxxxxxx_xxxxxx` exists and is trained using `my_cfg.json`. There must exist `log/x.x.x_xxxxxxxx_xxxxxx/checkpoint.json` that is automatically created and all the files described in it must exist. `.json` files are created for each `save_parameter_cycle`, and other files are created for each `checkpoint_cycle`.
 
 #### Plot the training process
-Use [plot_history.ipynb](plot_history.ipynb).
+Use [plot_linked_history.ipynb](plot_linked_history.ipynb).
 Note that the history data is large especially if icm is used. Therefore, we do not upload the data. If you want the data, please contact the corresponding author:
 ryoariizumi@go.tuat.ac.jp
 
