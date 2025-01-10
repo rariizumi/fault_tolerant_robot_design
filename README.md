@@ -74,7 +74,7 @@ It is necessary that a directory `log/x.x.x_xxxxxxxx_xxxxxx` exists and is train
 
 #### Plot the training process
 Use [plot_history.ipynb](plot_history.ipynb).
-Note that the history data is large especially icm is used. Therefore, we do not upload the data. If you want the data, please contact the corresponding author:
+Note that the history data is large especially if icm is used. Therefore, we do not upload the data. If you want the data, please contact the corresponding author:
 ryoariizumi@go.tuat.ac.jp
 
 #### Important attributes in cfg
