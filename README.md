@@ -79,6 +79,10 @@ ryoariizumi@go.tuat.ac.jp
 
 #### Important attributes in cfg
 - `initial_params_filename`: It is necessary to edit `max_num_limbs`, `policy`, `policy_kwargs`, and `rl_cfg` to match `initial_params_filename`.
+- `env_specific_cfg`:
+  - `robot_cfg`:
+    - `failure_occurrence`: This specifies whether actuator failures can occure or not.
+    - `failure_type`: The type of possible actuator failure.
 - `rl_cfg`: 
   - `algorithm`: `ppo`, `ddpg`, `ddpg_her`, or `sac_her`.
   - others: Passed to the model of stable_baselines3.
