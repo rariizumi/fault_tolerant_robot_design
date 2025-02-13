@@ -1,5 +1,7 @@
 # fault_tolerant_robot_design
 
+![Image](https://github.com/user-attachments/assets/ef58947f-f6d2-4fcf-abd5-1ab7040ae07f)
+
 ## Installation
 Check [install.md](install.md).
 
