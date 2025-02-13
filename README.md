@@ -2,12 +2,12 @@
 
 ![Image](https://github.com/user-attachments/assets/ef58947f-f6d2-4fcf-abd5-1ab7040ae07f)
 
-A robot designed to resist free-swinging joint failures
+A robot designed to resist free-swinging joint failures. Blue balls indicate the positions of free-swinging joints and blue links are connected to those joints.
 
 
 ![Image](https://github.com/user-attachments/assets/2d0ccdf1-b555-4a25-a89c-cc009144b33d)
 
-A robot designed to resist locked joint failures
+A robot designed to resist locked joint failures. Red balls indicate the positions of locked joints and red links are connected to those joints.
 
 ## Installation
 Check [install.md](install.md).
