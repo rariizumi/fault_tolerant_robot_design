@@ -54,7 +54,7 @@ pip install mpi4py==3.0.3 \
     notebook
 
 # Clone
-git clone https://github.com/r-koike/eagent
+git clone https://github.com/rariizumi/fault_tolerant_robot_design
 ```
 
 - To enable training, follow these steps:
@@ -91,7 +91,7 @@ pip install mpi4py==3.0.3 `
     notebook
 
 # Clone
-git clone https://github.com/r-koike/eagent
+git clone https://github.com/rariizumi/fault_tolerant_robot_design
 ```
 
 ### Install MuJoCo & mujoco-py
